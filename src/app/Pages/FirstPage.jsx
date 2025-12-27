@@ -102,10 +102,9 @@ const FirstPage = () => {
 
   // Start call
   async function startCall(otherUser, isReceiver) {
-    const stream = await initLocalStream(); // fix for null
+    const stream = await initLocalStream(); 
     const pc = createPeerConnection(otherUser);
     stream?.getTracks().forEach((track) => pc.addTrack(track, stream));
-
     if (!isReceiver) {
       const offer = await pc.createOffer();
       await pc.setLocalDescription(offer);
@@ -113,6 +112,7 @@ const FirstPage = () => {
     }
 
     setInCall(true);
+    ringtoneRef2.current.pause();
     ringtoneRef.current.pause();
     ringtoneRef.current.currentTime = 0;
   }
