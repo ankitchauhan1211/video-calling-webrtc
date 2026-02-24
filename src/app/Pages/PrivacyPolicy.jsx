@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <p>
-          Thank you for using <strong>Audio Amplifier Pro</strong> ("we",
+          Thank you for using <strong>LiveMic Amplifier</strong> ("we",
           "our", "us"). Your privacy is important to us. This Privacy Policy
           explains how we collect, use, and protect your information.
         </p>
